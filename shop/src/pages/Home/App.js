@@ -2,15 +2,26 @@ import { func } from "prop-types";
 import styles from "./App.module.scss";
 import React from "react";
 import { Container, Nav, Navbar,Row,Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-
+import {Switch, Route} from "react-router-dom";
+import Login from "../../pages/Topmenu/user/Login";
 import Header from "../../Components/Header/Header";
+import Scroll from "../../Components/Scroll/Scroll"
 function App() {
   return (
     <div className="App">
       <Container>
+      <Switch>
+      <Route exact path="/">
+        <Scroll></Scroll>
         <Header></Header>
         <Post></Post>
+        </Route>
+
+        <Route exact path="/login">
+        <Login></Login>
+        </Route>
+        </Switch>
+       
       </Container>
     </div>
   );
