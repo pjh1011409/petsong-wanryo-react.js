@@ -1,0 +1,21 @@
+.logo {
+    height: 150px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.social {
+    text-align: left;
+    max-width: 100%;
+    background-color: aqua;
+
+    .Notice,
+    .QandA {
+        display: block;
+        float: right;
+        margin: 0 10px;
+    }
+}
