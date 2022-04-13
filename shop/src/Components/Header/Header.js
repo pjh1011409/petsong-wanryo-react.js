@@ -2,9 +2,9 @@ import React from "react";
 import { Container} from "react-bootstrap";
 import {Route, Switch} from "react-router-dom";
 
-import TopMenu from "./Topmenu/Topmenu";
-import MiddleMenu from "./Middlemenu/Middlemenu";
-import MainMenu from "./Mainmenu/Mainmenu";
+import TopMenu from "./TopMenu/Topmenu";
+import MiddleMenu from "./MiddleMenu/MiddleMenu";
+import MainMenu from "./MainMenu/MainMenu";
 
 function Navigation() {
   return (

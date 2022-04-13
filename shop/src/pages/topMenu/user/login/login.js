@@ -1,7 +1,7 @@
 import {useHistory} from 'react-router-dom';
 import React from "react";
 import { Form, Button } from "react-bootstrap";
-import Header from "../../../Components/Header/Header"
+import Header from "../../../../components/Header/Header"
 
 function Login() {
   let history = useHistory();
@@ -32,16 +32,11 @@ function Login() {
       </Form>{" "}
       </div>
     
-      <button
-        onClick={() => {
-          history.goBack();
-        }}
-      >
-        ds
-      </button>
+     
     </div>
   );
 }
 
 
 export default Login;
+

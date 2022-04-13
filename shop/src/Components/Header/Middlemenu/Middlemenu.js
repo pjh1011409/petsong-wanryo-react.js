@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Midmenu.module.scss";
+import styles from "./MidMenu.module.scss";
 import {} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookSquare, faInstagram, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
