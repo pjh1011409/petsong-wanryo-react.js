@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Mainmenu.module.scss";
+import styles from "./MainMenu.module.scss";
 import { Container, Nav, Navbar, NavDropdown, Col, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -14,11 +14,11 @@ function MainMenu(){
             />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto" style={{ margin: "0 auto" }}>
-                <NavDropdown title="DOG" id="basic-nav-dropdown" style={{ margin: "0 50px" }}>
-                  <NavDropdown.Item href="#action/3.1" style={{ textAlign: "center" }}>
+                <NavDropdown title="DOG"  style={{ margin: "0 50px" }}>
+                  <NavDropdown.Item  href="/dogSS" style={{ textAlign: "center" }}>
                     S/S
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2" style={{ textAlign: "center" }}>
+                  <NavDropdown.Item href="/dogFW" style={{ textAlign: "center" }}>
                     F/W
                   </NavDropdown.Item>
                 </NavDropdown>

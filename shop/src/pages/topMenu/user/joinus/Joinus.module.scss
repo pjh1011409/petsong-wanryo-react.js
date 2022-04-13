@@ -1,0 +1,115 @@
+.joinUs {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.joinForm {
+    width: 70%;
+    min-width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 3px 1px #dadce0;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+
+    table input {
+        border: 1px solid #ececec;
+        font-size: 14px;
+        color: #4c4c4c;
+        height: 35px;
+        padding: 10px;
+        width: 80%;
+        float: left;
+    }
+
+    table input.email {
+        width: 150px;
+        display: inline-block;
+    }
+
+    table input.email2 {
+        width: 150px;
+    }
+
+    table select {
+        float: left;
+        margin-left: 10px;
+        margin-top: 13px;
+        height: 30px;
+        color: #4c4c4c;
+    }
+
+    table input.phone {
+        width: 80px;
+        display: inline-block;
+    }
+
+    table input.phone2 {
+        width: 100px;
+    }
+
+    table input.send_number {
+        width: 383px;
+    }
+
+    table th span {
+        color: #404040;
+        font-size: 14px;
+        display: inline-block;
+        padding: 0 10px 0 0;
+        text-indent: 20px;
+    }
+
+    table th {
+        text-align: left;
+    }
+
+    table td {
+        padding: 6px 0;
+    }
+
+    table th span:after {
+        content: "*";
+        font-size: 13px;
+        color: #f95427;
+        top: 0;
+        right: 0px;
+    }
+
+    table td a.btn_confirm {
+        display: inline-block;
+        float: left;
+        width: 100px;
+        height: 48px;
+        margin-top: 5px;
+        margin-left: 10px;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        vertical-align: top;
+        line-height: 50px;
+      }
+      
+}
+
+.exformTxt {
+    float: right;
+    margin-top: 30px;
+    margin-right: 25px;
+    text-align: center;
+    color: #4c4c4c;
+
+      
+  span:after {
+    content: "*";
+    font-size: 13px;
+    color: #f95427;
+    top: 0;
+  }
+  
+  }
+
+.signBtn {
+    text-align: center;
+  }

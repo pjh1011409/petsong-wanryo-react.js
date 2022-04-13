@@ -3,25 +3,47 @@ import styles from "./App.module.scss";
 import React from "react";
 import { Container, Nav, Navbar,Row,Col } from "react-bootstrap";
 import {Switch, Route} from "react-router-dom";
-import Login from "../../pages/Topmenu/user/Login";
-import Header from "../../Components/Header/Header";
-import Scroll from "../../Components/Scroll/Scroll"
+import Login from "../topMenu/user/login/login";
+import Header from "../../components/Header/Header";
+import Scroll from "../../components/Scroll/Scroll"
+import JoinUs from "../topMenu/user/joinus/joinus"
+import DogFW from "../mainMenu/dog/dogFW/dogFW";
+import DogSS from "../mainMenu/dog/dogSS/dogSS";
+import Detail from "../mainMenu/dog/detail"
 function App() {
   return (
     <div className="App">
       <Container>
-      <Switch>
-      <Route exact path="/">
-        <Scroll></Scroll>
-        <Header></Header>
-        <Post></Post>
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <Scroll></Scroll>
+            <Header></Header>
+            <Post></Post>
+          </Route>
 
-        <Route exact path="/login">
-        <Login></Login>
-        </Route>
+          {/* 탑 페이지  */}
+          <Route exact path="/login">
+            <Login></Login>
+          </Route>
+          <Route exact path="/joinus">
+            <JoinUs></JoinUs>
+          </Route>
+
+          {/* 메인페이지 */}
+          <Route exact path="/dogFW">
+            <DogFW></DogFW>
+          </Route>
+
+          <Route exact path="/dogSS">
+            <DogSS></DogSS>
+          </Route>
+
+          {/* 상세페이지 */}
+          <Route exact path="/detail/:id">
+            <Detail></Detail>
+          </Route>
+
         </Switch>
-       
       </Container>
     </div>
   );
