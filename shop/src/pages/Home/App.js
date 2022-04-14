@@ -1,6 +1,6 @@
 import { func } from "prop-types";
 import styles from "./App.module.scss";
-import React from "react";
+import React ,{useState}from "react";
 import { Container, Nav, Navbar,Row,Col } from "react-bootstrap";
 import {Switch, Route} from "react-router-dom";
 import Login from "../topMenu/user/login/login";
@@ -10,7 +10,10 @@ import JoinUs from "../topMenu/user/joinus/joinus"
 import DogFW from "../mainMenu/dog/dogFW/dogFW";
 import DogSS from "../mainMenu/dog/dogSS/dogSS";
 import Detail from "../mainMenu/dog/detail"
+import Data from "../mainMenu/dog/dogSS/dogSSData"
 function App() {
+  let [dogData, setdogData] = useState(Data);
+
   return (
     <div className="App">
       <Container>
@@ -23,24 +26,29 @@ function App() {
 
           {/* 탑 페이지  */}
           <Route exact path="/login">
+          <Header></Header>
             <Login></Login>
           </Route>
           <Route exact path="/joinus">
+          <Header></Header>
             <JoinUs></JoinUs>
           </Route>
 
           {/* 메인페이지 */}
           <Route exact path="/dogFW">
+          <Header></Header>
             <DogFW></DogFW>
           </Route>
 
           <Route exact path="/dogSS">
-            <DogSS></DogSS>
+          <Header></Header>
+            <DogSS dogData={dogData}></DogSS>
           </Route>
 
           {/* 상세페이지 */}
           <Route exact path="/detail/:id">
-            <Detail></Detail>
+          <Header></Header>
+            <Detail dogData={dogData}></Detail>
           </Route>
 
         </Switch>
