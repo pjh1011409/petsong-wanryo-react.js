@@ -8,7 +8,6 @@ import {Form, Row, Col, Button, InputGroup} from "react-bootstrap"
 function JoinUs() {
   return (
     <div>
-      <Header></Header>
       <JoinForm></JoinForm>
     </div>
   );

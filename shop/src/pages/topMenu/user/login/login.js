@@ -8,7 +8,6 @@ function Login() {
 
   return (
     <div>
-      <Header></Header>
       <div style={{width: "50%", margin: "0 auto"}}>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
