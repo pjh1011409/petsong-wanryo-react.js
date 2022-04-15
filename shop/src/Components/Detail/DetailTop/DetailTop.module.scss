@@ -1,0 +1,114 @@
+* {
+    margin: 0; /* 마진 리셋 */
+    padding: 0; /* 패딩 리셋 */
+  }
+  
+  body {
+    display: block;
+  }
+  
+li {
+    display: inline-block;
+  }
+
+.mainTop {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid gray;
+  }
+
+
+.mainTop {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid gray;
+  }
+  /* ----------------------------상품이미지--------------------------- */
+.topLeft {
+    width: 50%;
+    height: 80%;
+    float: left;
+  }
+  .topLeft img {
+    width: 80%;
+    height: 80%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 150px;
+    /* ----------------------------------상품 주문 칸--------------------- */
+  }
+  .topRight {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+  /* --------------------------상품명------------------------ */
+  .box1 {
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+  }
+  /* -------------------------------가격-------------------- */
+  .box2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+  }
+  /* ------------------------- 사이즈-------------------------- */
+  .box3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sizeBox {
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /* ----------------------상품 목록--------------------- */
+  .box4 {
+    height: 250px;
+    border-bottom: 1px solid gray;
+  }
+  
+ 
+  .total li {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* ---------------------------버튼---------------------- */
+  
+  .btn {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  /* ---------------------------버튼 효과----------------- */
+
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+  }
+  .btn:focus {
+    outline: 2px dotted black;
+  }
