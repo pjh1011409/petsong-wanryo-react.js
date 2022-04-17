@@ -39,7 +39,8 @@ function DetailTop(props){
 
 function Info(props){
 
-
+  let state = useSelector((state)=>state);
+  let dispatch = useDispatch(); // dispatch 기능은 useDispatch()로 사용가능
   let [size, setSize] = useState([1,3,'안녕',4]);
   let [click, setClick] = useState(false);
 
@@ -61,10 +62,13 @@ function Info(props){
                     return(
                       <Button
                          onClick={()=>{
-                          let copy = [...info];
-                          copy.push(size[i]);
-                          setInfo(copy);
-                          console.log(info);
+                          dispatch({
+                            type: "항목추가",
+                            payload: {
+                              size: size,
+                              price: props.dataId.price,
+                            },
+                          });
                          }}
                       variant="outline-dark"
                     >
@@ -88,10 +92,10 @@ function Info(props){
   
                     {
                     
-                      info.map((i)=>{
+                      state.reducer.map((a,i)=>{
                         return(
                           <tr>
-                          <td>{info[i]}</td>
+                          <td>{a[i]}</td>
                           <td>
                             1<button>-</button>
                             <button>+</button>
@@ -122,4 +126,6 @@ function Info(props){
     </div>
   )
 }
+
+
 export default DetailTop;
